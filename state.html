@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Javier Medina">
+        <meta name="date" content=" March 2024 ">
+        <meta name="description" content=" My Web Page Demo">
+        <meta name="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen" href="style.css">
+        
+        <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+            <title>
+            State
+            </title>
+            
+            <script src="CSP.js"></script>
+            
+           
+    </head>
+    <body>
+
+        <div id="container">
+            
+            <header>
+                <script>displayHeader()</script>
+                <h1> State Information</h1>
+            </header> 
+            <nav>
+                
+                <script>displayNav()</script>
+            </nav>
+            <main>
+                <div id="content">
+                    <p>Maintaining State Information:</p>
+                    <p id="Paragraph1">[To understand state information and maintain state we must know its meaning. State information is just session data that is transferred between the client computer and the web server. We work on maintaining it for a variety of reasons. 
+                        ]</p>
+                    <p id="Paragraph2">[State information that has to be maintained between and during sessions can be stored in three ways. First is remotely on the server making it accessible on user client’s devices. Locally on client devices. As well as both on the client device and server which are stated to be the best designs. ]</p>
+                    <p id="Paragraph3"> [When dealing with state, it’s important to represent each piece of data uniquely. Like working with a circle for example it has x, y, and radius values. These three are properties that make the state of the circle.]</p>
+                    <p id="Paragraph4">[Encryption is also a important feature to maintain state. The Security Sockets Layer (SSL) is the main protocol that we use to encrypt data like cookies on websites. Then we have Transport Layer Security (TLS) which is another encryption protocol. Both of these protocols are essential for security as both protect us against a man in the middle attack, in which data being scured between two parties is read and potentially changed in transit]</p>
+                </div>
+                <div id="selectors">
+                    <button id="smallBtn" class="sizeBtn">Small</button>
+                    <button id="mediumBtn" class="sizeBtn selected">Medium</button>
+                    <button id="largeBtn" class="sizeBtn">Large</button>
+                </div> 
+            </main>
+            <footer>
+                <div id="footwrap">
+                    <div id="footercontent">
+                <script>displayFooter()</script> 
+                </div>
+                </div>
+                </footer>
+        <script src="state.js"></script>
+    </body>
+</html>

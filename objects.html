@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Javier Medina">
+        <meta name="date" content=" March 2024 ">
+        <meta name="description" content=" My Web Page Demo">
+        <meta name="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen" href="style.css">
+        <link rel="stylesheet" href="objects.css">
+        <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+            <title>
+            Objects
+            </title>
+            <script src="modernizr.custom.65897.js"></script>
+            <script src="CSP.js"></script>
+            <script src="objects.js"></script>
+           
+    </head>
+    <body>
+
+        <div id="container">
+            
+            <header>
+                <script>displayHeader()</script>
+                <h1> Objects</h1>
+            </header> 
+            <nav>
+                
+                <script>displayNav()</script>
+            </nav>
+            <main>
+               <div class="imgGallery"> 
+                  <h1>Photo Gallery: Ordering Form </h1>  
+                  <p><img src="images/Fivestar.jpg" width="250" height="175" alt="imgOne" /><br />
+                      imgOne</p>
+                  <p><img src="images/rainbow.jpg" width="250" height="175" alt="imgTwo" /><br />
+                      imgTwo</p>
+                </div>
+            
+                <form id="formPhoto" name="formPhoto">
+                   <fieldset>
+                      <legend>Customer Information</legend>
+                      <label for="buyer" class="required">Name:</label>
+                      <input type="text" id="buyer" name="buyer"  />
+                      <label class="error" id="errorName">*Required Field&nbsp;&nbsp;</label><br/>
+                      
+                      <label for="email" class="required">Email:</label><input type="text" id="email" name="email"  />
+                      <label class="error" id="errorEmail">*Required Field&nbsp;&nbsp;</label>
+                      <br class="clearboth" />
+                   </fieldset> <br>
+            
+                  
+                   <fieldset>
+                       <legend>Select Image</legend>
+                       <label class="titleLabel" for="imgOne">imageOne</label>
+                       <input type="radio" id="imgOne" name="fileName" value="Fivestar.jpg"/>
+            
+                       <label class="titleLabel" for="imgTwo">imgTwo</label>
+                       <input type="radio" id="imgTwo" name="fileName"  value="rainbow.jpg" />
+                       
+                       <label id="errorFilename" class="error">&nbsp;&nbsp;&nbsp;&nbsp;*Select an image</label> 
+                    </fieldset><br>
+             
+            
+                     <fieldset>
+                          <legend>Order Information</legend>
+                               <div class="lefttwo">
+                                   <label for="pictureOne">4-wallets ($10)</label>
+                                   <input type="radio" id="pictureOne" name="size" value="4-wallets"/>
+                                   
+                                   <label for="pictureTwo">2-4x6 ($10)</label>
+                                   <input type="radio" id="pictureTwo" name="size"  value="2-4x6" />
+            
+                                   <label for="pictureThree">5x7 ($10)</label>
+                                   <input type="radio" id="pictureThree" name="size" value="5x7" />
+                               </div>
+                              <div class="lefttwo">
+                                   <label  for="pictureFour">8x10 ($20)</label>
+                                   <input type="radio" id="pictureFour" name="size" value="8x10" />
+                                   
+                                   <label for="pictureFive">11x14 ($30)</label>
+                                   <input type="radio" id="pictureFive" name="size" value="11x14" />
+                              </div>
+                              <div class="lefttwo">
+                                   <label id="errorSize" class="error">*Select a size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                             </div>
+                             <br /><br class="clearboth" />
+            
+                             <label for="copies" class="required">Quantity</label>
+                             <input type="text" id="copies" name="copies"  />
+                             <label id="errorPortrait" class="error">*Must be 1-25&nbsp;&nbsp;&nbsp;</label> 
+                             <br class="clearboth" />
+            
+                             <p><input id="prepareOrderButton" class="margin175" type="button" value="Prepare Order" /></p>
+                     </fieldset>
+            </form> 
+            </main>
+            <footer>
+                <script>displayFooter()</script> 
+            </footer>
+        </div>
+        <script src="objects.js"></script>
+    </body>
+</html>

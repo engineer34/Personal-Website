@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Javier Medina">
+        <meta name="date" content=" March 2024 ">
+        <meta name="description" content=" My Web Page Demo">
+        <meta name="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen" href="styles.css">
+            <title>
+BMI Calculator
+            </title>
+            <script src="modernizr.custom.65897.js"></script>
+            <script src="CSP.js"></script>
+           
+    </head>
+    <body>
+
+        <div id="wrapper">
+            
+            <header>
+                <script>displayHeader()</script>
+            </header> 
+            <nav>
+                <script>displayNav()</script>
+            </nav>
+            <main>
+                <h1>BMI Calculator</h1>
+        <form id="bmiForm">
+            <label for="weight">Weight (in pounds):</label>
+            <input type="number" id="weight" min="1" max="750" required>
+            <br>
+            <label for="height">Height (in inches):</label>
+            <input type="number" id="height" min="1" max="100" required>
+            <br>
+            <label for="bmiResult">BMI:</label>
+            <input type="text" id="bmiResult" readonly>
+            <br>
+            <button type="button" onclick="calcBMI()">Calculate BMI</button>
+        </form>
+                <figure>
+                    <img alt =" The Mario Star " width ="75 px" height ="75 px" 
+                    src = https://static.wikia.nocookie.net/smbz/images/6/6f/Star.jpg/revision/latest?cb=20100718182954>
+                    <div id="div1"  class="make-center"></div>
+                    <figcaption > <em >  </em > </figcaption>
+                  </figure>
+            </main>
+            <footer>
+                <script>displayFooter()</script> 
+            </footer>
+        </div>
+        
+    </body>
+</html>

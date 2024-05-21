@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Javier Medina">
+        <meta name="date" content=" March 2024 ">
+        <meta name="description" content=" My Web Page Demo">
+        <meta name="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen" href="style.css">
+        
+        <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+            <title>
+            Strings
+            </title>
+            <script src="modernizr.custom.65897.js"></script>
+            <script src="CSP.js"></script>
+            
+           
+    </head>
+    <body>
+
+        <div id="container">
+            
+            <header>
+                <script>displayHeader()</script>
+                <h1> Guessing Game</h1>
+            </header> 
+            <nav>
+                
+                <script>displayNav()</script>
+            </nav>
+            <main>
+                <form>
+                    <label for="guessLetter">Enter a letter:</label>
+                    <input type="text" id="guessLetter" maxlength="5">
+                    <input type="button" id="buttonSubmitGuess" value="Submit Letter">
+                </form>
+                
+                <div id="displayWord"></div>
+            </main>
+            <footer>
+                <script>displayFooter()</script> 
+            </footer>
+        </div>
+        <script src="strings.js"></script>
+    </body>
+</html>
